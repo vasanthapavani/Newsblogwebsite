@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/83/ed/af/83edaf3b21d7c0b759e84d9f6bc37996.jpg">
+<style>
+ 
+  img:hover {
+    background-color:yellow;
+  }
+body
+{
+ background-color:black}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f166; 
+  width: 500px;
+  transition: .5s ease;
+  opacity:0;
+  font-weight: 600;
+  color: #04AA6D ;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+mark
+{
+background-color:#555}
+h3{
+    font-weight: 700;
+}
+
+</style>
+</head>
+<body>
+
+<h1 align="center" style="color:#04AA6D;">ENTERTAINMENT</h1>
+<h3 align="center" style="color:white"><i><b><q>MOVIES ARE WINDOWS TO OTHER PARTS OF THE WORLD</q></b></i></h3><br>
+                                                                                                         
+
+<div class="row">
+  <div class="column">
+  <div class="container">
+    <a href="{{url_for('rrr')}}"><img src="https://pbs.twimg.com/media/FnPg_fRagAQs2sl.jpg:large" alt="ipl" height="330" width="490"></a>
+     <div class="overlay">OSCAR</div>
+</div>
+  </div>
+  <div class="column">
+    <div class="container">
+   <a href="{{url_for('kantara')}}"><img src="https://media5.bollywoodhungama.in/wp-content/uploads/2022/10/Kantara.jpeg" alt="women t20" width="490" height="330"></a>
+    <div class="overlay">KANTARA2 </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+    <a href="{{url_for('nbk')}}"><img src="https://m.economictimes.com/thumb/msid-98911246,width-1200,height-900,resizemode-4,imgsize-105562/nandamuri-balakrishnas-nbk-108-first-look-poster-unveiled-check-out-here.jpg" alt="Gavaskar Trophy" width="490" height="330">
+    <div class="overlay">NBK 108</div>
+  </div>
+</div>
+<div class="column">
+    <div class="container">
+    <a href="{{url_for('pushpa2')}}"><img src="https://m.economictimes.com/thumb/msid-95528664,width-1200,height-900,resizemode-4,imgsize-50524/the-shooting-schedule-for-pushpa-2-may-begin-in-december-.jpg" alt="Gavaskar Trophy" width="490" height="330">
+    <div class="overlay">PUSHPA PART2</div>
+  </div>
+</div>
+<div class="column">
+    <div class="container">
+    <a href="{{url_for('pspk')}}"><img src="https://assets.thehansindia.com/h-upload/2023/02/22/1337740-pawan-kalyan.webp" alt="Gavaskar Trophy" width="490" height="330">
+    <div class="overlay">PK NEW LOOK</div>
+  </div>
+</div>
+<div class="column">
+    <div class="container">
+    <a href="{{url_for('dasara')}}"><img src="https://cdn.123telugu.com/content/wp-content/uploads/2023/02/Nani-m-1.jpg" alt="Gavaskar Trophy" width="490" height="330">
+    <div class="overlay">NANI'S DASARA</div>
+  </div>
+</div>

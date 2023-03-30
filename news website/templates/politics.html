@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/83/ed/af/83edaf3b21d7c0b759e84d9f6bc37996.jpg">
+<style>
+ 
+  img:hover {
+    background-color:yellow;
+  }
+body
+{
+ background-color:black}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f166; 
+  width: 500px;
+  transition: .5s ease;
+  opacity:0;
+  font-weight: 600;
+  color: #04AA6D ;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+mark
+{
+background-color:#555}
+h3{
+    font-weight: 700;
+}
+
+</style>
+</head>
+<body>
+
+<h1 align="center" style="color:#04AA6D;">POLITICS</h1>
+<h3 align="center" style="color:white"><i><b><q>JUDGE POLITICIANS BY ACTIONS RATHER THAN PROMISES</q></b></i></h3><br>
+                                                                                                         
+
+<div class="row">
+  <div class="column">
+  <div class="container">
+    <a href="{{url_for('janasena')}}"><img src="https://data1.ibtimes.co.in/en/full/683165/janasena-party-formation-day-photo.jpg" alt="ipl" height="330" width="490"></a>
+     <div class="overlay">JANASENA</div>
+</div>
+  </div>
+  <div class="column">
+    <div class="container">
+    <a href="{{url_for('tdp')}}"><img src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2023/03/16/232178-andhramlcelectionresultlive.jpg?itok=UuuuO_7F" alt="Gavaskar Trophy" width="490" height="330">
+    <div class="overlay">TDP MAJORITY</div>
+  </div>
+</div>
+<div class="column">
+    <div class="container">
+    <a href="{{url_for('ippatam')}}"><img src="https://assets.thehansindia.com/h-upload/2022/11/05/1319205-pawan-kalyan.jpg" alt="Gavaskar Trophy" width="490" height="330">
+    <div class="overlay">IPPATAM VILLAGE</div>
+  </div>
+</div>
+<div class="column">
+    <div class="container">
+    <a href="{{url_for('kavitha')}}"><img src="https://cdn.gulte.com/wp-content/uploads/2022/08/kavitha.jpg" alt="Gavaskar Trophy" width="490" height="330">
+    <div class="overlay">KAVITHA LIQUOR CASE</div>
+  </div>
+</div>

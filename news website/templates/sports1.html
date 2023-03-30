@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+ 
+  img:hover {
+    background-color:yellow;
+  }
+body
+{
+ background-color:black}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f166; 
+  width: 500px;
+  transition: .5s ease;
+  opacity:0;
+  font-weight: 600;
+  color: #04AA6D ;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+mark
+{
+background-color:#555}
+
+</style>
+</head>
+<body>
+
+<h1 align="center" style="color:#04AA6D;">SPORTS</h1>
+<h3 align="center" style="color:white"><i><q>I HAVE FAILED OVER AND OVER IN MY LIFE...THAT'S WHY I <strong>SUCCEED</strong></q></i></h3>
+                                                                                                         
+
+<div class="row">
+  <div class="column">
+  <div class="container">
+    <a href="{{url_for('ipl')}}"><img src="https://www.insidesport.in/wp-content/uploads/2020/06/1-1-9.jpg" alt="ipl" height="330" width="490"></a>
+     <div class="overlay">IPL</div>
+</div>
+  </div>
+  <div class="column">
+    <div class="container">
+   <a href="{{url_for('woment20')}}"><img src="https://images.indianexpress.com/2023/02/india-womens-cricket-2022.jpg" alt="women t20" width="490" height="330"></a>
+    <div class="overlay">WOMEN T20</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+    <a href="{{url_for('trophy')}}"><img src="https://sportstiger-images.s3.ap-south-1.amazonaws.com/media/border-gavaskar-trophy-1674379225417-original.jpg" alt="Gavaskar Trophy" width="490" height="330">
+    <div class="overlay">GAVASKAR TROPHY</div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="container">
+    <a href="{{url_for('ronaldo')}}"><img src="https://assets.khelnow.com/news/uploads/2022/04/CR7-lead-pic.jpg" alt="RONALDO" height="330" width="490"></a>
+    <div class="overlay">RONALDO'S HATRICK</div>
+  </div>
+</div>
+  <div class="column">
+    <div class="container"> 
+    <a href="{{url_for('kohli')}}"><img src="https://sportscafe.in/img/es3-cfill-s100/articles/Cricket_1/MSD_Virat_Kohli_getty.jpg" alt="VIRAT" width="490" height="330"></a>
+    <div class="overlay">KOHLI'S INSIGHT ABOUT DHONI</div>
+  </div>
+  </div>
+  <div class="column">
+    <div class="container"> 
+    <a href="{{url_for('sania')}}"><img src="https://assets.gqindia.com/photos/63d792d46efd77bf74eab13a/master/pass/Sania-Mirza.jpg" alt="SANIA" width="490" height="330"></a>
+    <div class="overlay">SANIA MIRZA</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
